@@ -43,6 +43,8 @@ class Calculadora:
         DEFECTO INTENCIONAL #2 (Bug): No valida números negativos.
         """
         # ❌ BUG: math.sqrt(-1) lanza ValueError en runtime
+        # ❌ CODE SMELL: Variable sin usar
+        variable_sin_usar = "debug"
         return math.sqrt(numero)
 
     def potencia(self, base: float, exponente: float) -> float:
