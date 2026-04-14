@@ -84,17 +84,17 @@ class GestorHistorial:
         """Limpia el historial completo."""
         self.historial = []
 
-    def calcular_promedio_resultados(self) -> float:
-        """
-        Calcula el promedio de todos los resultados del historial.
-        DEFECTO INTENCIONAL #4 (Code Smell): Código duplicado.
-        Esta lógica también aparece en reporte.py (duplicación > 3%).
-        """
-        if not self.historial:
-            return 0.0
-        total = sum(entrada["resultado"] for entrada in self.historial)
-        promedio = total / len(self.historial)
-        return promedio
+    ##def calcular_promedio_resultados(self) -> float:
+        ##"""
+        ##Calcula el promedio de todos los resultados del historial.
+        ##DEFECTO INTENCIONAL #4 (Code Smell): Código duplicado.
+        ##Esta lógica también aparece en reporte.py (duplicación > 3%).
+        ##"""
+        ##if not self.historial:
+        ##    return 0.0
+        ##total = sum(entrada["resultado"] for entrada in self.historial)
+        ##promedio = total / len(self.historial)
+        ##return promedio
 
 
 # ─── PROCESADOR DE MÉTRICAS ─────────────────────────────────────────────────
